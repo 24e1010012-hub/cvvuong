@@ -1,0 +1,99 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* gradient tím xanh */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #333;
+}
+
+/* Card */
+.cv-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.8s ease-in-out;
+  overflow-y: auto;
+  max-height: 95vh;
+}
+
+/* Avatar & profile */
+.profile {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #2575fc;
+  margin-bottom: 15px;
+}
+.profile h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6a11cb;
+}
+.subtitle {
+  color: #555;
+}
+
+/* Section */
+section {
+  margin-bottom: 22px;
+}
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2575fc;
+  border-left: 5px solid #6a11cb;
+  padding-left: 10px;
+}
+ul {
+  margin-left: 20px;
+  list-style: none;
+}
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Hobbies */
+.hobbies li {
+  display: inline-block;
+  background: #eef2ff;
+  color: #333;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Contact links */
+.contact a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cv-card { padding: 20px; }
+  .avatar { width: 100px; height: 100px; }
+  .profile h1 { font-size: 1.5rem; }
+}
